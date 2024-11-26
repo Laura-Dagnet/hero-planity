@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <title>Recode Planity</title>
+</head>
+
+<body>
+  <!-- START : HEADER -->
+  <header class="header">
+    <div class="header__container flux">
+    <!-- source on peut pas modifier la couleur du svg doit utiliser un filtre en css -->
+    <a href="index.html"><img src="assets/img/logo.svg" alt="logo du site planity" class="header__logo"></a>
+    <nav>
+      <ul class="header__list-link">
+        <li class="header__link"><a href="#">Coiffeur</a></li>
+        <li class="header__link"><a href="#">Barbier</a></li>
+        <li class="header__link"><a href="#">Manucure</a></li>
+        <li class="header__link"><a href="#">Institut de beauté</a></li>
+      </ul>
+    </nav>
+    <div class="header__quick-actions">
+      <button type="button" class="button button--background-grey">Ajouter votre etablissement</button>
+      <button type="button" class="button button--black">Se connecter</button>
+    </div> 
+    </div>
+    
+  </header>
+  <!-- END : HEADER -->
+  <!-- START : MAIN -->
+  <main>
+    <!-- START : hero-->
+    <section class="hero hero-image">
+      <h1 class="hero__title">Réservez en beauté</h1>
+      <p class="hero__description">Simple • Immédiat • 24/24</p>
+
+      <!-- START: Form -->
+      <form action="/" method="get" class="hero__search-bar">
+        <!-- on crée une div pour mettre labet et input ensemble afin de les mettre en column -->
+        <div class="hero__search-field">
+        <label for="my-services" class="hero__search-field hero__label">Que recherchez-vous ?
+          <input 
+          type="text" 
+          id="my-service"
+          value="" 
+          name="service"
+          placeholder="Nom du salon, prestations (coupe...)"
+          class="hero__input">
+        </label>
+      </div>
+
+        <label for="localisation" class="hero__search-field hero__label">Où ?
+        <input
+        type="text"
+        id="localisation"
+        value=""
+        name="localisation-service"
+        placeholder="Adresse, ville"
+        class="hero__input">
+        </label>
+  
+        <button type="submit" class="button button--black">Rechercher</button>
+      </form>
+            <!-- END: Form -->
+    </section>
+    <!-- END : hero -->
+  </main>
+  <!-- END : MAIN -->
+</body>
+
+</html>
